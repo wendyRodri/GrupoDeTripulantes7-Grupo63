@@ -1,15 +1,19 @@
 <template>
   <BasicLayouts>
-    <h2>SisteLing</h2>
+    <h2>Nuestra Tienda</h2>
+    <Cart />
   </BasicLayouts>
 </template>
 
 <script>
 import BasicLayouts from '../layouts/BasicLayouts.vue';
+import Cart from '../components/Cart.vue';
+import { useRoute, useRouter } from 'vue-router';
 export default {
-  name: 'Home',
+  name: 'Store',
   components: {
     BasicLayouts,
+    Cart
   },
 };
 </script>
